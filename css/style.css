@@ -1,0 +1,121 @@
+:root{
+    --img: url('https://www.shutterstock.com/image-photo/old-brick-black-color-wall-260nw-1605128917.jpg')}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--img) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.from-box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+}
+.from-box:hover{
+    backdrop-filter: blur(10px);
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 290px;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    font-size: 1em;
+    color: #Fff;
+    padding: 0 35px 0 5px;
+    border: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -3px;
+    color: #FFf;
+}
+.input-box img {
+    position: absolute;
+    width: 30px;
+    right: 8px;
+    color: #fff;
+    font-size:0.9em;
+    top: 10px;
+
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    background: #fff;
+}
+.register{
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+ 
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
